@@ -7,6 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "watch": "nodemon server.js",
+    "build": "webpack",
+    "heroku-postbuild": "echo Skip build on Heroku",
     "lite-server": "lite-server"
   },
   "repository": {
@@ -31,5 +33,6 @@
     "webpack": "^5.35.0",
     "webpack-cli": "^4.6.0",
     "webpack-pwa-manifest": "^4.3.0"
-  }
+  },
+  "heroku-run-build-script": true
 }
