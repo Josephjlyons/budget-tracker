@@ -18,8 +18,8 @@ app.use(express.static("public"));
 mongoose.connect(process.env.URI || "mongodb://localhost/budget-tracker", {
     
         useNewUrlParser: true,
-        // useUnifiedTopology: true,
-        // useCreateIndex: true,
+        useUnifiedTopology: true,
+        useCreateIndex: true,
         useFindAndModify: false
     
 });
